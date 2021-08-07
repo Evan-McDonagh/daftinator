@@ -41,7 +41,7 @@ Here is an example completed myDetails.js file:
 ```javascript
 data = {
     name:"Sherlock Holmes",
-    email:"sherlock@holmsconsultancy.com",
+    email:"sherlock@holmesconsultancy.com",
     phone:"+353 20 919 2682",
     message_code:'data.message = `${salutation}, \n\nI am writing to you to enquire about the availability of the apartment at ${address}. I would be interested in arranging a viewing at your earliest convenience. My references are available on request.\n\nRegards,\nSherlock Holmes.`'
 }
