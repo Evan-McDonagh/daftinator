@@ -41,7 +41,7 @@ Here is an example completed myDetails.js file:
 ```javascript
 data = {
     name:"Sherlock Holmes",
-    email:"sherlock@wonkaschocolate.com",
+    email:"sherlock@holmsconsultancy.com",
     phone:"+353 20 919 2682",
     message_code:'data.message = `${salutation}, \n\nI am writing to you to enquire about the availability of the apartment at ${address}. I would be interested in arranging a viewing at your earliest convenience. My references are available on request.\n\nRegards,\nSherlock Holmes.`'
 }
@@ -49,7 +49,7 @@ data = {
 
 So, on running the extension on the listing "221B Baker Street" posted by "Martha Louise Hudson" and the Agent Gender button selected as female, the message component will then render as in the daft email popup as:
 
-> Dear Ms. Doyle, 
+> Dear Ms. Hudson, 
 >
 > I am writing to you to enquire about the availability of the apartment at 221B Baker Street. I would be interested in arranging a viewing at your earliest convenience. My references are available on request.
 >
