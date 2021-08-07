@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .form-select {
+                margin-left: 20px;
+            }
+            .form-check {
+                margin-left: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <div>
+                    <button class="btn btn-primary" type="submit" id="fillButton">Insert Details</button>
+                </div>
+                <br>
+                <div>
+                    <div>
+                        <h6 class="card-title">Agent gender:</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="male" name="gender" value="Mr.">
+                            <label class="form-check-label" for="male">Male</label> 
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input"type="radio" id="female" name="gender" value="Ms.">
+                            <label class="form-check-label" for="male">Female</label> 
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input"type="radio" id="None" name="gender" value="None" checked>
+                            <label class="form-check-label" for="male">None</label> 
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <div>
+                        <h6>Default Salutation:</h6>
+                        <select id="defaultSalutation" class="form-select" aria-label="Default select example">
+                            <option value="To whom it may concern" selected>To whom it may concern</option>
+                            <option value="Dear Sir/Madam">Dear Sir/Madam</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div style="float:right;"><small>Icon from <a href="https://fontawesome.com/">Font Awesome</a></small></div>
+            </div>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>
