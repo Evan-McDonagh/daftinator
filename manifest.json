@@ -16,7 +16,8 @@
   "permissions": [
     "https://*/*",
     "http://*/*",
-    "tabs"
+    "tabs",
+    "storage"
   ],
   "icons": {
     "128": "images/home-solid.png"
