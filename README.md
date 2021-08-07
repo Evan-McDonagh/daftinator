@@ -1,6 +1,6 @@
 # daftinator
 
-**daftinator** is a simple chrome extension for injecting personal details and a pre-written message into the contact section of an online rental property listing. 
+**daftinator** is a simple chrome extension for injecting personal details and a pre-written message into the contact section of an Irish online rental property listing. 
 
 The script will parse the name of the lister and the address of the property from the site and can inject it into your prewritten spiel wherever you want, with basic built in logic to fill a default salutation or a gendered name-specific salutation. 
 
