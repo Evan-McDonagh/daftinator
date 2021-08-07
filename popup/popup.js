@@ -4,20 +4,12 @@ let defaultSalutation = document.getElementById('defaultSalutation');
 var gender;
 var defaultSalutationValue;
 
-let color = '#3aa757';
-
 getSettings(defaultSalutation);
 
 fillButton.addEventListener("click", async () => {
     // for the current tab, inject the "inject.js" file & execute it
     gender = document.querySelector('input[name="gender"]:checked').value;
     defaultSalutationValue = document.getElementById('defaultSalutation').value;
-
-    // fillButton.addEventListener("click", async () => {
-    //     chrome.runtime.sendMessage({gender: gender}, function(response) {
-    //         console.log(response.farewell);
-    //     });
-    // });"
 
     chrome.runtime.sendMessage(
         {

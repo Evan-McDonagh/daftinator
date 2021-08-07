@@ -81,7 +81,7 @@
 			name = document.querySelector('[class*=ContactPanel__ImageLabel]').textContent;
 		} else if (url.includes('rent.ie')) {
 			address = document.querySelector('h1').textContent
-			name = "Butts";
+			name = "Placeholder";
 		}
 		return {"address":address,"name":name};
 	} 
