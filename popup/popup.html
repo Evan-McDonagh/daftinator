@@ -16,7 +16,13 @@
         <div class="card" style="width: 18rem;">
             <div class="card-body">
                 <div>
-                    <button class="btn btn-primary" type="submit" id="fillButton">Insert Details</button>
+                    <div>
+                        <h6>Default Salutation:</h6>
+                        <select id="defaultSalutation" class="form-select" aria-label="Default select example">
+                            <option value="To whom it may concern" selected>To whom it may concern</option>
+                            <option value="Dear Sir/Madam">Dear Sir/Madam</option>
+                        </select>
+                    </div>
                 </div>
                 <br>
                 <div>
@@ -37,14 +43,8 @@
                     </div>
                 </div>
                 <br>
-                <div>
-                    <div>
-                        <h6>Default Salutation:</h6>
-                        <select id="defaultSalutation" class="form-select" aria-label="Default select example">
-                            <option value="To whom it may concern" selected>To whom it may concern</option>
-                            <option value="Dear Sir/Madam">Dear Sir/Madam</option>
-                        </select>
-                    </div>
+                <div class="row justify-content-center">
+                    <button class="btn btn-primary" type="submit" id="fillButton">Insert Details</button>
                 </div>
                 <br>
                 <div style="float:right;"><small>Icon from <a href="https://fontawesome.com/">Font Awesome</a></small></div>
