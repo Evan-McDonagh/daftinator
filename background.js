@@ -1,3 +1,5 @@
+// Skeleton of code based on Dan Harpers Chrome JS injection extensionhttps://gist.github.com/danharper/8364399 
+
 // this is the background code...
 var tab;
 var variableInsertionCode = "";
