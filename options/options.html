@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <style>
+            .btn-primary {
+                color: #fff;
+                background-color: #007bff;
+                border-color: #007bff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+        <div class="card-body">
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input class="form-control" id="name">
+                <br>
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email">
+                <br>
+                <label for="phone">Phone number</label>
+                <input class="form-control" id="phone">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary" id="submit" type="submit" onclick="window.close()">Save</button>
+        </form>
+        </div>
+        </div>
+    </body>
+    <script src="options.js"></script>
+</html>

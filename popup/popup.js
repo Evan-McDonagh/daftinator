@@ -1,5 +1,6 @@
 let fillButton = document.getElementById('fillButton');
 let defaultSalutation = document.getElementById('defaultSalutation');
+let optionsButton = document.getElementById('options');
 
 var gender;
 var defaultSalutationValue;
@@ -18,14 +19,18 @@ fillButton.addEventListener("click", async () => {
         }, 
         function(response) {
             console.log(response.farewell);
-      });
-});
+        });
+    });
 
 defaultSalutation.addEventListener('change', async () => {
     chrome.storage.local.set({"defaultSalutation": defaultSalutation.value}, function() {
         console.log('Value is set to ' + defaultSalutation.value);
       });
     });
+
+options.addEventListener('click', async () => {
+    chrome.runtime.openOptionsPage();
+    })
 
 function getSettings(defaultSalutation) {
     chrome.storage.local.get(['defaultSalutation'], function(data) {
@@ -37,4 +42,6 @@ function getSettings(defaultSalutation) {
         else {defaultSalutation.value = data['defaultSalutation']};
     });
 }
+
+
   

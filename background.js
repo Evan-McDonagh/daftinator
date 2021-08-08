@@ -13,13 +13,18 @@ chrome.runtime.onMessage.addListener(
 				tab = tabs[0];
 				url = tab.url;
 				
-				// build code to insert values from popup
-				variableInsertionCode += 'var gender = "' + request.gender + '"; '
-				variableInsertionCode += 'var defaultSalutation = "' + request.defaultSalutation + '"; '
-				variableInsertionCode += 'var url = "' + url + '"; '
-
-				chrome.tabs.executeScript(tab.id, {
-					file: "myDetails.js"
+				chrome.storage.local.get(['name','email','phone','message'], function(response) {
+					data = {
+						name:response.name,
+						email:response.email,
+						phone:response.phone,
+						message_code:"data.message = `" + response.message + "`"
+					}
+					// build code to insert values from popup
+					variableInsertionCode += "data = " + JSON.stringify(data)+';';
+					variableInsertionCode += 'var gender = "' + request.gender + '"; '
+					variableInsertionCode += 'var defaultSalutation = "' + request.defaultSalutation + '"; '
+					variableInsertionCode += 'var url = "' + url + '"; '
 				});
 				chrome.tabs.executeScript(tab.id ,{
 					code: variableInsertionCode
