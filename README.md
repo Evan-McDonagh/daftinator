@@ -30,7 +30,7 @@ You can include the follow values in your message to allow for the program to pa
     - If gender is selected as female: *Dear Ms. [PARSED AGENT NAME]*
     - If gender is selected as None: *[SELECTED DEFAULT SALUTAION]*
 
- - **{address}** - this will auto-fill as the address parsed from the webpage.
+ - **${address}** - this will auto-fill as the address parsed from the webpage.
 
 For example, given a listing posted by Martha Louise Hudson at 221B Baker street, the entry 
 
